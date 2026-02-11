@@ -1,30 +1,100 @@
-# Career guidance app
+📌 Career Pro – Career Guidance Web Application
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Career Pro is a web-based career guidance platform that helps users explore suitable career paths based on their interests, skills, and preferences. It provides career recommendations, role details, and guidance resources in a simple and user-friendly way.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/sg4644-5609s-projects/v0-career-guidance-app)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/h0GiPEQ7iMo)
+🚀 Features
 
-## Overview
+User Registration & Login
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+Career Recommendation based on user inputs
 
-## Deployment
+Career Categories (IT, Core, Business, Design, etc.)
 
-Your project is live at:
+Career Role Details (skills required, roadmap, scope)
 
-**[https://vercel.com/sg4644-5609s-projects/v0-career-guidance-app](https://vercel.com/sg4644-5609s-projects/v0-career-guidance-app)**
+Simple Dashboard for users
 
-## Build your app
+Responsive UI
 
-Continue building your app on:
+🛠️ Tech Stack
 
-**[https://v0.app/chat/projects/h0GiPEQ7iMo](https://v0.app/chat/projects/h0GiPEQ7iMo)**
+Frontend: HTML, CSS, JavaScript
+Backend: Java (JDBC)
+Database: MySQL
 
-## How It Works
+⚙️ Setup Instructions
+1️⃣ Clone the Project
+git clone <your-repo-link>
+cd career-pro
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+2️⃣ Database Setup (MySQL)
+
+Open MySQL Workbench / MySQL CLI
+
+Create a database:
+
+CREATE DATABASE career_pro;
+
+
+Import the SQL file (if provided):
+
+SOURCE career_pro.sql;
+
+3️⃣ Configure Database Connection
+
+Go to your Java DB connection file and update:
+
+String url = "jdbc:mysql://localhost:3306/career_pro";
+String user = "root";
+String password = "your_password";
+
+4️⃣ Run the Backend (Java)
+
+Compile and run your main Java file:
+
+javac Main.java
+java Main
+
+
+(If you are using Eclipse/IntelliJ, just click Run.)
+
+5️⃣ Run the Frontend
+
+Open the frontend file directly in browser:
+
+index.html
+
+OR run using VS Code Live Server extension.
+
+📂 Project Folder Structure (Sample)
+career-pro/
+│
+├── frontend/
+│   ├── index.html
+│   ├── login.html
+│   ├── dashboard.html
+│   ├── css/
+│   └── js/
+│
+├── backend/
+│   ├── Main.java
+│   ├── DBConnection.java
+│   ├── UserDAO.java
+│   └── CareerDAO.java
+│
+├── database/
+│   └── career_pro.sql
+│
+└── README.md
+
+✅ How to Use
+
+Register a new account
+
+Login with your credentials
+
+Fill interest/skill details
+
+View career recommendations
+
+Explore career roadmap and guidance
